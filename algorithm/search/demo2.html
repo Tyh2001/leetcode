@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    var search = function (nums, target) {
+      let low = 0
+      let high = nums.length - 1
+
+      while (low <= high) {
+        const mid = Math.floor((high - low) / 2) + low // 获取到中间的索引
+        const midNum = nums[mid] // 获取到中间的那个元素
+
+        // console.log(mid, 'mid')
+
+        // 如果中间的正好的要找的数字 则直接返回
+        // 如果 nums[i]=target，则下标 i 即为要寻找的下标；
+        // 这里 low = 0；high = nums.length - 1 = 5
+        if (midNum === target) {
+          return mid
+        } else if (midNum > target) {
+          // 如果要找的数字比中间的数字小的话，那么要找的数字在数组的左侧
+
+          high = mid - 1
+          console.log(high, 'high')
+        } else {
+          // 如果要找的数字比中间的数字大的话，那么要找的数字在数组的右侧
+
+          // 第一次找的是9，所以执行这里
+          // 每次循环的索引都增加1，依次向后执行查找
+          low = mid + 1
+          // console.log(low, 'low')
+          // console.log(high, 'high')
+        }
+      }
+      return -1
+    }
+
+    // console.log(search([-1, 0, 3, 5, 9, 12], 9))
+    console.log(search([-1, 0, 3, 5, 9, 12], 0))
+  </script>
+</body>
+
+</html>
