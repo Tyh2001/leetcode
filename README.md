@@ -4,6 +4,12 @@ leetcode 冲冲冲！仓库记录我在 leetcode 上的刷题记录，包括算�
 
 # 算法
 
-1. [search 二分查找](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/search/demo1.js)
+## 1.search 二分查找
 
-2. [searchInsert 搜索插入位置](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/searchInsert/demo1.js)
+- [search 二分查找 1](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/search/demo1.js)
+
+- [search 二分查找 2](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/search/demo2.js)
+
+## 2.searchInsert 搜索插入位置
+
+- [searchInsert 搜索插入位置](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/searchInsert/demo1.js)
