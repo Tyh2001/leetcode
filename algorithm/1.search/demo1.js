@@ -1,4 +1,5 @@
 /**
+ * https://leetcode-cn.com/problems/binary-search/
  * @param {number[]} nums
  * @param {number} target
  * @return {number}
