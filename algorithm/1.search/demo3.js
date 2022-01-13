@@ -4,7 +4,6 @@
  * @param {number} target
  * @return {number}
  */
-
 var search = function (nums, target) {
   let firstIndex = 0,  // 获取第一位的索引
     lastIndex = nums.length - 1 // 获取最后一位的索引

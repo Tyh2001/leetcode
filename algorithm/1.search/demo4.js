@@ -4,7 +4,6 @@
  * @param {number} target
  * @return {number}
  */
-
 var search = function (nums, target) {
   return search_interval(nums, target, 0, nums.length - 1)
 }

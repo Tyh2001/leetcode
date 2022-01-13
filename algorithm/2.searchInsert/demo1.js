@@ -4,6 +4,7 @@
  * @param {number} target
  * @return {number}
  */
+
 var searchInsert = function (nums, target) {
   const arr = [...new Set([...nums, target])]
   arr.sort((a, b) => a - b)
