@@ -13,7 +13,3 @@ leetcode 冲冲冲！仓库记录我在 leetcode 上的刷题记录，包括算�
 ### 2.searchInsert 搜索插入位置
 
 - [searchInsert 搜索插入位置](https://github.com/Tyh2001/leetcode-sprint/blob/master/2.algorithm/searchInsert/demo1.js)
-
-## 数据结构
-
-待更新。。。
