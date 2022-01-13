@@ -10,6 +10,8 @@ var search = function (nums, target) {
     lastIndex = nums.length - 1, // 获取最后一位的索引
     middleIndex = Math.floor((firstIndex + lastIndex) / 2) // 获取中间的索引
 
+  // 在中间值不等于找找找的值的时候 并且第一位的索引小于最后一位索引的时候才开始执行循环
+  // 否则在下面直接返回
   while (nums[middleIndex] !== target && firstIndex <= lastIndex) {
 
     // 如果中间值大于需要找到的值 说明要找的值在中间值的左侧
@@ -22,12 +24,12 @@ var search = function (nums, target) {
     } else {
       firstIndex = middleIndex + 1
     }
-
+    // 每次循环重置中间的索引
     middleIndex = Math.floor((firstIndex + lastIndex) / 2)
 
   }
 
-  // 如果中间值等于需要找到的值 则直接返回索引
+  // 如果中间值等于需要找到的值 则直接返回索引 找不到则返回 -1
   return nums[middleIndex] === target ? middleIndex : -1
 }
 
