@@ -17,7 +17,7 @@ var search = function (nums, target) {
  */
 function search_interval (arr, target, firstIndex, lastIndex) {
   // 证明没找到
-  if (firstIndex > lastIndex) return -1
+  if (firstIndex > lastIndex) return -1;
 
   // 中间的索引
   const middleIndex = Math.floor((firstIndex + lastIndex) / 2)
