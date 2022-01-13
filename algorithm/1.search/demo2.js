@@ -4,9 +4,33 @@
  * @param {number} target
  * @return {number}
  */
-var search = function (nums, target) {
 
+var search = function (nums, target) {
+  let firstIndex = 0,  // 获取第一位的索引
+    lastIndex = nums.length - 1, // 获取最后一位的索引
+    middleIndex = Math.floor((firstIndex + lastIndex) / 2) // 获取中间的索引
+
+  while (nums[middleIndex] !== target && firstIndex <= lastIndex) {
+
+    // 如果中间值大于需要找到的值 说明要找的值在中间值的左侧
+    // 就需要将最后一位的索引改为 middleIndex - 1
+    if (nums[middleIndex] > target) {
+      lastIndex = middleIndex - 1
+
+      // 如果中间值小于需要找到的值 说明要找的值在中间值的右侧
+      // 就需要将第一位的索引改为 middleIndex + 1
+    } else {
+      firstIndex = middleIndex + 1
+    }
+
+    middleIndex = Math.floor((firstIndex + lastIndex) / 2)
+
+  }
+
+  // 如果中间值等于需要找到的值 则直接返回索引
+  return nums[middleIndex] === target ? middleIndex : -1
 }
 
-console.log(search([-1, 0, 3, 5, 9, 12], 9))
-console.log(search([-1, 0, 3, 5, 9, 12], 2))
+
+console.log(search([-1, 0, 3, 5, 9, 12], 9)) // 4
+console.log(search([-1, 0, 3, 5, 9, 12], 2)) // -1
