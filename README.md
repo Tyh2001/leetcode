@@ -6,14 +6,14 @@ leetcode 冲冲冲！仓库记录我在 leetcode 上的刷题记录，包括算�
 
 ### 1.search 二分查找
 
-- [search 二分查找 1](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/1.search/demo1.js)
+- [search 二分查找 1](https://github.com/Tyh2001/leetcode-sprint/blob/master/1.search/demo1.js)
 
-- [search 二分查找 2](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/1.search/demo2.js)
+- [search 二分查找 2](https://github.com/Tyh2001/leetcode-sprint/blob/master/1.search/demo2.js)
 
-- [search 二分查找 3](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/1.search/demo3.js)
+- [search 二分查找 3](https://github.com/Tyh2001/leetcode-sprint/blob/master/1.search/demo3.js)
 
-- [search 二分查找 4](https://github.com/Tyh2001/leetcode-sprint/blob/master/algorithm/1.search/demo4.js)
+- [search 二分查找 4](https://github.com/Tyh2001/leetcode-sprint/blob/master/1.search/demo4.js)
 
 ### 2.searchInsert 搜索插入位置
 
-- [searchInsert 搜索插入位置](https://github.com/Tyh2001/leetcode-sprint/blob/master/2.algorithm/searchInsert/demo1.js)
+- [searchInsert 搜索插入位置](https://github.com/Tyh2001/leetcode-sprint/blob/master/2/searchInsert/demo1.js)
