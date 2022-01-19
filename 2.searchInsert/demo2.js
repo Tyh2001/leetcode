@@ -6,9 +6,22 @@
  */
 
 var searchInsert = function (nums, target) {
-  const arr = [...new Set([...nums, target])]
-  arr.sort((a, b) => a - b)
-  return arr.indexOf(target)
+  let firstIndex = 0,
+    lastIndex = nums.length - 1,
+    res = nums.length
+
+  while (firstIndex <= lastIndex) {
+    const middleIndex = Math.floor((firstIndex + lastIndex) / 2)
+    if (nums[middleIndex] === target) {
+      return middleIndex
+    } else if (nums[middleIndex] > target) {
+      res = middleIndex
+      lastIndex = middleIndex - 1
+    } else {
+      firstIndex = middleIndex + 1
+    }
+  }
+  return res
 }
 
 console.log(searchInsert([1, 3, 5, 6], 5)) // 2
