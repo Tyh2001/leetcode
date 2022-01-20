@@ -15,3 +15,5 @@ leetcode 冲冲冲！仓库记录我在 leetcode 上的刷题记录，包括算�
 
 - [searchInsert 搜索插入位置 1](https://github.com/Tyh2001/leetcode-sprint/blob/master/2.searchInsert/demo1.js)
 - [searchInsert 搜索插入位置 2](https://github.com/Tyh2001/leetcode-sprint/blob/master/2.searchInsert/demo2.js)
+
+#
