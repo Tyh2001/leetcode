@@ -9,9 +9,16 @@ var twoSum = function (nums, target) {
   let keys = {}
   for (let i = 0; i < nums.length; i++) {
     let num = nums[i]
+    // num 就是数组中的每一项 6, 4, 2, 7, 11, 15
 
     // 判断差值diff在键值对中是否存在 是则找到匹配数字
+    // diff 就是要找的数字
     let diff = target - num
+    // 3，5，7
+
+    /**
+     * num + diff = target
+     */
 
     // console.log(!isNaN(keys[diff]))
     // if (!isNaN(keys[diff])) {
@@ -23,6 +30,9 @@ var twoSum = function (nums, target) {
 
     // 未出现匹配值 将数字存入键值对中以备后续判断
     // 将需要找的值放在对象中
+    /**
+     * 将要找的数字 diff 作为键，索引为 值进行保存
+     */
     keys[diff] = i
     // keys[nums[i]] = i
     // console.log(keys)
@@ -30,8 +40,38 @@ var twoSum = function (nums, target) {
   }
 }
 
-console.log(twoSum([2, 7, 11, 15], 9)) // [0, 1]
+
+console.log(twoSum([6, 4, 2, 7, 11, 15], 9)) // [2, 3]
+
+/**
+ * num = 6
+ * diff = 3
+ * { '3':0 }
+ *
+ * num = 4
+ * diff = 5
+ * { '3':0 ,'5':1}
+ *
+ * num = 2
+ * diff = 7
+ * { '3':0 ,'5':1,'7':2}
+ *
+ * num = 7
+ * diff = 2
+ * 返回 [2, 3]
+ */
+
 // console.log(twoSum([3, 2, 4], 6)) // [1, 2]
+
+/**
+ * num = 3
+ * diff = 3
+ *
+ * {'3': 0}
+ *
+ */
+
+
 // console.log(twoSum([3, 3], 6)) // [0, 1]
 
 /**
