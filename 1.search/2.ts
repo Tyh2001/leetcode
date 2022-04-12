@@ -4,7 +4,7 @@
  * @param {number} target
  * @return {number}
  */
-var search = function (nums, target) {
+var search: Function = function search(nums, target) {
   return search_interval(nums, target, 0, nums.length - 1)
 }
 
@@ -15,7 +15,7 @@ var search = function (nums, target) {
  * @param {num} firstIndex 第一个索引
  * @param {num} lastIndex 最后索引
  */
-function search_interval (arr, target, firstIndex, lastIndex) {
+function search_interval(arr, target, firstIndex, lastIndex) {
   // 证明没找到
   if (firstIndex > lastIndex) return -1;
 

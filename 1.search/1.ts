@@ -4,9 +4,10 @@
  * @param {number} target
  * @return {number}
  */
-var search = function (nums, target) {
-  return nums.indexOf(target)
+var search = function (nums: number[], target: number): number {
+
 }
+
 
 console.log(search([-1, 0, 3, 5, 9, 12], 9)) // 4
 console.log(search([-1, 0, 3, 5, 9, 12], 2)) // -1
