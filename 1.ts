@@ -1,14 +1,20 @@
 // https://leetcode-cn.com/problems/two-sum/
 function twoSum(nums: number[], target: number): number[] {
+  // 用来存放数据
   const map = {}
+
   for (let i: number = 0; i < nums.length; i++) {
-    const diff = target - nums[i]
+    // 需要找的值
+    const diff: number = target - nums[i]
+
+    // 如果需要找的值已经存在
     if (map[diff] !== undefined) {
       return [map[diff], i]
     }
+
+    // 边找边存 以数组的值为键 索引我值进行存储
     map[nums[i]] = i
   }
-
 }
 
 // {
